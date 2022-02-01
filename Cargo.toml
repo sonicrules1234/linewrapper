@@ -1,0 +1,17 @@
+[package]
+name = "linewrapper"
+version = "0.1.1"
+edition = "2021"
+authors = ["Westly Ward <sonicrules1234@gmail.com>"]
+description = "Line Wrapper for macroquad"
+license-file = "LICENSE"
+repository = "https://github.com/sonicrules1234/linewrapper"
+readme = "README.md"
+homepage = "https://github.com/sonicrules1234/linewrapper"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[target.'cfg(target_os = "android")'.dependencies]
+macroquad = "0.3.7"
+textwrap = "0.14.2"
